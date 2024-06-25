@@ -1,4 +1,4 @@
-Here's the updated README incorporating the details for accessing the OLLAMA server and the Open Web UI via localhost URLs and including a curl command to test the OLLAMA server by sending a question:
+Sure, I'll update the README to specifically instruct Windows users to install Docker Desktop, which includes Docker Compose as part of the installation. Here's the revised README with the updated installation instructions for Windows:
 
 ---
 
@@ -9,9 +9,16 @@ This guide provides instructions on how to set up and run the OLLAMA service alo
 ## Prerequisites
 
 Before you begin, ensure you have the following installed on your system:
+
+### All Users
 - **Git**: [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) for your operating system.
+
+### Windows Users
+- **Docker Desktop for Windows**: Install Docker Desktop for Windows which includes Docker Compose. [Download Docker Desktop](https://docs.docker.com/docker-for-windows/install/).
+
+### Mac and Linux Users
 - **Docker**: [Install Docker](https://docs.docker.com/get-docker/) for your operating system.
-- **Docker Compose**: [Install Docker Compose](https://docs.docker.com/compose/install/) if it's not included in your Docker installation.
+- **Docker Compose**: Typically included with Docker for Linux. For Mac, Docker Desktop includes Docker Compose. Verify during installation.
 
 ## Cloning the Repository
 
@@ -80,7 +87,7 @@ This command builds (if necessary), (re)creates, starts, and attaches to contain
 
 ## Testing the OLLAMA Server
 
-To test the OLLAMA server, you can use the following `curl` command from your command line to ask a question: (must download via containter command line or web-ui first...)
+To test the OLLAMA server, you can use the following `curl` command from your command line to ask a question:
 
 ```bash
 curl http://localhost:11434/api/generate -d '{
