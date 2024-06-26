@@ -1,7 +1,3 @@
-Sure, I'll update the README to specifically instruct Windows users to install Docker Desktop, which includes Docker Compose as part of the installation. Here's the revised README with the updated installation instructions for Windows:
-
----
-
 # Getting Started with OLLAMA and Open Web UI
 
 This guide provides instructions on how to set up and run the OLLAMA service along with an Open Web UI using Docker Compose. This setup is suitable for beginners and covers everything from cloning the repository to running and testing the services.
